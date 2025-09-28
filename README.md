@@ -149,24 +149,6 @@ poetry run pytest tests/test_coupling_dummy.py
 poetry run pytest --nbmake notebooks/
 ```
 
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Setup
-
-```bash
-# Install development dependencies
-poetry install --with dev
-
-# Install pre-commit hooks
-poetry run pre-commit install
-
-# Run linting
-poetry run black .
-poetry run ruff check .
-poetry run isort .
-```
 
 ## Architecture
 
@@ -193,25 +175,3 @@ scflux_spatial/
     ├── run_spatial.py # Spatial simulation CLI
     └── run_flux.py   # Flux analysis CLI
 ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Citation
-
-If you use this software in your research, please cite:
-
-```bibtex
-@software{scflux_spatial,
-  title={scflux_spatial: Spatial Flux Balance Analysis for Single-Cell Data},
-  author={Ethan Rouzier},
-  year={2024},
-  url={https://github.com/ethanrouzier/scflux_spatial}
-}
-```
-
-## Support
-
-- **Issues**: [GitHub Issues](https://github.com/ethanrouzier/scflux_spatial/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/ethanrouzier/scflux_spatial/discussions)
