@@ -1,0 +1,10 @@
+# Visium data loader configuration
+visium_loader:
+  spatial_key: "spatial"
+  library_id: "spaceranger_output"
+  image_path: "spatial/tissue_hires_image.png"
+  scale_factors_path: "spatial/scalefactors_json.json"
+  tissue_positions_path: "spatial/tissue_positions_list.csv"
+  filter_missing_genes: true
+  min_cells_per_gene: 10
+  min_genes_per_cell: 200

@@ -1,0 +1,13 @@
+# Human GEM configuration
+human_gem:
+  model_url: "https://github.com/SysBioChalmers/Human-GEM/raw/master/model/Human-GEM.xml"
+  local_path: "data/models/Human-GEM.xml"
+  biomass_reaction: "biomass_human"
+  exchange_reactions:
+    - "EX_glc__D_e"
+    - "EX_lac__L_e"
+    - "EX_o2_e"
+  medium_composition:
+    EX_glc__D_e: -10.0  # mmol/gDW/h
+    EX_o2_e: -1000.0
+    EX_h2o_e: -1000.0

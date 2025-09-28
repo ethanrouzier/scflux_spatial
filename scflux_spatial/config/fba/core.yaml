@@ -1,0 +1,28 @@
+# FBA core configuration
+fba_core:
+  solver: "glpk"
+  tolerance: 1e-6
+  max_iterations: 1000
+  method: "pFBA"  # pFBA, FBA, FVA
+  flux_variability:
+    fraction_of_optimum: 0.9
+    processes: 1
+
+# Expression integration configuration
+expression_integration:
+  method: "eflux"  # eflux, imat, imat_like, linear, quadratic, none
+  eflux:
+    scaling_factor: 1.0
+    use_pfba: false
+  imat_like:
+    high_quantile: 0.75
+    low_quantile: 0.25
+    activation_bound: 1000.0
+    minimization_bound: 0.1
+  imat:
+    high_threshold: 0.75
+    low_threshold: 0.25
+  linear:
+    scaling_factor: 1.0
+  quadratic:
+    scaling_factor: 1.0

@@ -1,0 +1,33 @@
+domain:
+  nx: 64
+  ny: 64
+  Lx: 1.0         # m
+  Ly: 1.0         # m
+  bc:             # conditions aux limites par métabolite (par défaut Neumann)
+    left: neumann
+    right: neumann
+    bottom: neumann
+    top: neumann
+
+time:
+  dt: null        # auto pour schéma implicite (calculé)
+  t_end: 3600.0   # s
+
+substrates:
+  - name: O2
+    D: 2.0e-9     # m^2/s
+    C0: 0.2       # mol/m^3 (≈200 µM)
+  - name: Glc
+    D: 6.0e-10
+    C0: 5.0       # mol/m^3
+
+coupling:
+  max_iters: 20
+  tol_rel: 1.0e-3
+  under_relax: 0.4  # alpha
+
+biomass_density:
+  rho_gDW_per_m3: 5.0e3  # gDW / m^3 (ex. 5 g/L)
+
+logging:
+  level: INFO

@@ -1,0 +1,12 @@
+# Kinetics model configuration
+kinetics:
+  michaelis_menten:
+    glucose:
+      vmax: 10.0  # mmol/gDW/h
+      km: 0.1     # mM
+    oxygen:
+      vmax: 1000.0
+      km: 0.01
+    lactate:
+      vmax: 5.0
+      km: 0.5

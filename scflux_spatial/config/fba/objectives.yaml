@@ -1,0 +1,11 @@
+# Objective functions configuration
+objectives:
+  biomass_human:
+    reaction: "biomass_human"
+    direction: "max"
+  atp_maintenance:
+    reaction: "ATPM"
+    direction: "max"
+  glucose_uptake:
+    reaction: "EX_glc__D_e"
+    direction: "min"

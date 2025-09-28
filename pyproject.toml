@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "scflux_spatial"
+version = "0.1.0"
+description = "Spatial flux balance analysis for single-cell data"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{ include = "scflux_spatial" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+numpy = ">=2.0.0"
+xarray = ">=2024.10.0"
+fipy = "^3.5.0"
+cobra = "^0.28.0"
+optlang = "^1.8.0"
+swiglpk = "^5.0.10"
+anndata = "^0.10.9"
+scanpy = "^1.10.2"
+plotly = "^5.23.0"
+hydra-core = "^1.3.2"
+pydantic = "^2.9.0"
+rich = "^13.8.1"
+# optionnels (utilisés dans notebooks) : gardés en runtime si tu t'en sers
+squidpy = "^1.6.5"
+umap-learn = "^0.5.9.post2"
+xarray-spatial = "^0.4.0"
+spatialdata = "^0.5.0"
+ipykernel = "^6.30.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+nbmake = "^1.5.4"
+black = "^24.8.0"
+isort = "^5.13.2"
+ruff = "^0.6.8"
+pre-commit = "^3.8.0"
+mypy = "^1.11.2"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"

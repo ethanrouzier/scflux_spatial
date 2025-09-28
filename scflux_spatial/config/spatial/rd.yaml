@@ -1,0 +1,12 @@
+# Reaction-diffusion configuration
+reaction_diffusion:
+  grid_size: [100, 100]
+  domain_size: [1.0, 1.0]  # mm
+  time_step: 0.1
+  total_time: 100.0
+  boundary_conditions: "no_flux"
+  diffusion_coefficients:
+    glucose: 1e-6  # mm²/s
+    lactate: 1e-6
+    oxygen: 1e-5
+    atp: 1e-7

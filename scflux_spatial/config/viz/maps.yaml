@@ -1,0 +1,8 @@
+# Visualization configuration
+viz_maps:
+  colormap: "viridis"
+  figure_size: [10, 8]
+  dpi: 300
+  show_colorbar: true
+  interpolation: "nearest"
+  overlay_alpha: 0.7
